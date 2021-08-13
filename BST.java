@@ -16,7 +16,7 @@ public class BST<T extends Comparable<T>> implements Tree<T> {
 	}
 
 	private void inorderTraverse(TreeNode<T> root) {
-		if(root == null)
+		if (root == null)
 			return;
 		inorderTraverse(root.left);
 		System.out.println(root.data + "  ");
@@ -24,7 +24,14 @@ public class BST<T extends Comparable<T>> implements Tree<T> {
 
 	}
 
-	
+	@Override
+	public void preorder() {
+		System.out.println("preorder is");
+		System.out.println(root.data + " ");
+		inorderTraverse(root.left);
+		inorderTraverse(root.right);
+
+	}
 
 	@Override
 	public boolean isEmpty() {

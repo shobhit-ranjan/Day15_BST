@@ -5,9 +5,7 @@ interface Tree<T extends Comparable<T>> {
 
 	void inorder();
 
-	
-
-
+	void preorder();
 
 	boolean isEmpty();
 

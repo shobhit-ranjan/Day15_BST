@@ -14,7 +14,7 @@ public class MainClass {
 		tree.add(144);
 		tree.add(132);
 		tree.inorder();
-		tree.preorder();
+		
 		
 
 	}
