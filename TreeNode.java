@@ -5,7 +5,6 @@ class TreeNode<T extends Comparable<T>> {
 	TreeNode<T> left, right;
 
 	public TreeNode(T data) {
-		
 
 		this.data = data;
 		left = null;
@@ -13,5 +12,3 @@ class TreeNode<T extends Comparable<T>> {
 	}
 
 }
-
-

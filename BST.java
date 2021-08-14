@@ -60,4 +60,23 @@ public class BST<T extends Comparable<T>> implements Tree<T> {
 
 	}
 
+	private boolean searchfromTree(TreeNode<T> root, T data) {
+
+		if (root == null) {
+			return false;
+		} else if (data.compareTo(root.data) > 0) {
+			return searchfromTree(root.right, data);
+		} else if (data.compareTo(root.data) < 0) {
+			return searchfromTree(root.left, data);
+		} else {
+			return true;
+		}
+	}
+
+	@Override
+	public boolean search(T data) {
+
+		return searchfromTree(root, data);
+	}
+
 }

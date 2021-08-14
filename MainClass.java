@@ -2,7 +2,7 @@
 public class MainClass {
 
 	public static void main(String[] args) {
-	
+
 		Tree<Integer> tree = new BST<>();
 		tree.add(100);
 		tree.add(101);
@@ -14,8 +14,8 @@ public class MainClass {
 		tree.add(144);
 		tree.add(132);
 		tree.inorder();
-		
-		
+		tree.preorder();
+		tree.search(100);
 
 	}
 
